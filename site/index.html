@@ -53,7 +53,7 @@
       width: 200px;
     }
     .container {
-      width: 600px;
+      width: 1000px;
     }
   }
   .title {
@@ -74,7 +74,7 @@
 
   <core-header-panel>
 
-    <core-toolbar class="medium-tall">
+    <core-toolbar class="tall">
 
     	<div class="title" layout horizontal center>
         <img src="../images/avatar-01.svg" width="50" height="50">
@@ -99,6 +99,9 @@
   </core-header-panel>
 
   <script>
+  window.onscroll = function (event) {
+  // called when the window is scrolled.
+  }
   var tabs = document.querySelector('paper-tabs');
   var list = document.querySelector('post-list');
 
