@@ -1,0 +1,42 @@
+<link rel="import" href="../components/polymer/polymer.html">
+<link href="../components/paper-shadow/paper-shadow.html" rel="import">
+<link href="../components/core-menu/core-menu.html" rel="import">
+<polymer-element name="my-menu">
+  <template>
+    <style>
+    :host {
+      display: block;
+      background-color: white;
+      padding: 20px;
+      width: 100%;
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+    .my-menu {
+      margin: 100px;
+    }
+    </style>
+
+    
+
+    <div class="my-menu">
+    <paper-dropdown-menu label="Sous-Section">
+    <paper-dropdown class="dropdown">
+        <core-menu class="menu">
+            <paper-item>Croissant</paper-item>
+            <paper-item>Donut</paper-item>
+            <paper-item>Financier</paper-item>
+            <paper-item>Madeleine</paper-item>
+        </core-menu>
+    </paper-dropdown>
+</paper-dropdown-menu>
+    </div>
+
+    <content></content>   
+  </template>
+  <script>
+  Polymer({
+
+  });
+  </script>
+</polymer-element>
