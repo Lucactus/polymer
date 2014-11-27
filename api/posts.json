@@ -2,57 +2,57 @@
   {
     "uid": 1,
     "text" : "aferme ta mere a double tour?",
-    "username" : "jackquie",
-    "avatar" : "../images/avatar-01.svg",
-    "favorite": false
+    "title" : "jackquie",
+    "pic" : "../images/avatar-01.svg",
+    "section" : "1"
   },
   {
     "uid": 2,
     "text" : "WSWWAASDDDDDF SWAGGY this Polymer thing.",
-    "username" : "Rob",
-    "avatar" : "../images/avatar-02.svg",
-    "favorite": false
+    "title" : "Rob",
+    "pic" : "../images/avatar-02.svg",
+    "section" : "2"
   },
     {
     "uid": 3,
     "text" : "So last year...",
-    "username" : "Dimitri",
-    "avatar" : "../images/avatar-03.svg",
-    "favorite": false
+    "title" : "Dimitri",
+    "pic" : "../images/avatar-03.svg",
+    "section" : "3"
   },
   {
     "uid": 4,
     "text" : "Pretty sure I came up with that first.",
-    "username" : "Ada",
-    "avatar" : "../images/avatar-07.svg",
-    "favorite": false
+    "title" : "Ada",
+    "pic" : "../images/avatar-07.svg",
+    "section" : "1"
   },
   {
     "uid": 5,
     "text" : "Yo, I heard you like components, so I put a component in your component.",
-    "username" : "Grace",
-    "avatar" : "../images/avatar-08.svg",
-    "favorite": false
+    "title" : "Grace",
+    "pic" : "../images/avatar-08.svg",
+    "section" : "3"
   },
   {
     "uid": 6,
     "text" : "Centralize, centrailize.",
-    "username" : "John",
-    "avatar" : "../images/avatar-04.svg",
-    "favorite": false
+    "title" : "John",
+    "pic" : "../images/avatar-04.svg",
+    "section" : "1"
   },
   {
     "uid": 7,
     "text" : "Has anyone seen my cat?",
-    "username" : "Zelda",
-    "avatar" : "../images/avatar-06.svg",
-    "favorite": false
+    "title" : "Zelda",
+    "pic" : "../images/avatar-06.svg",
+    "section" : "2"
   },
   {
     "uid": 8,
     "text" : "Decentralize!",
-    "username" : "Norbert",
-    "avatar" : "../images/avatar-05.svg",
-    "favorite": false
+    "title" : "Norbert",
+    "pic" : "../images/avatar-05.svg",
+    "section" : "1"
   }
 ]

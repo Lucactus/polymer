@@ -61,12 +61,12 @@
       width: 600px;
     }
   }
-    polyfill-next-selector { content: '.title img'; }
-    .title ::content img {
-      width: 70px;
-      border-radius: 50%;
-      margin: 10px;
-    }  
+
+  .title img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }  
   </style>
 
 </head>
@@ -77,16 +77,16 @@
 
     <core-toolbar class="medium-tall">
     	<div class="title" layout horizontal center>
-        <img src="../images/avatar-02.svg" width="70" height="70">
+        <img src="../images/logoiut.png" width="50" height="50">
         <div flex>Title</div>
       </div>
       <div class="bottom fit" horizontal layout>
         
-        <paper-tabs selected="0" flex style="max-width: 600px;">
+        <paper-tabs selected="1" flex style="max-width: 600px;">
         
-          <paper-tab name="all">ITEM ONE</paper-tab>
-          <paper-tab name="favorites">ITEM TWO</paper-tab>
-          <paper-tab>ITEM THREE</paper-tab>
+          <paper-tab name="1">ITEM ONE</paper-tab>
+          <paper-tab name="2">ITEM TWO</paper-tab>
+          <paper-tab name="3">ITEM THREE</paper-tab>
         </paper-tabs>
 
       </div>
@@ -94,9 +94,9 @@
     </core-toolbar>
 
     <div class="container" layout vertical center>
-      <post-list show="all"></post-list>
+      <post-list show="1"></post-list>
     </div>
-    
+
   </core-header-panel>
 
   <script>
