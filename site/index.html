@@ -82,7 +82,7 @@
 
     <core-toolbar class="medium-tall">
 
-      <div class="title" horizontal center-justified layout>
+      <div class="title" horizontal center layout>
         <img src="../images/avatar-01.svg" width="50" height="50">
         <div>Les études dans l'informatique : s'informer pour faire le bon choix !</div>
       </div>
@@ -103,28 +103,14 @@
 
   </core-scroll-header-panel>
 
-  <core-animation id="fadeout" duration="1000">
-    <core-animation-keyframe>
-      <core-animation-prop name="opacity" value="1"></core-animation-prop>
-    </core-animation-keyframe>
-    <core-animation-keyframe>
-      <core-animation-prop name="opacity" value="0"></core-animation-prop>
-    </core-animation-keyframe>
-  </core-animation>
   <script>
+    // TAB SELECTOR
+    var tabs = document.querySelector('paper-tabs');
+    var list = document.querySelector('post-list');
 
-  // TAB SELECTOR
-  var tabs = document.querySelector('paper-tabs');
-  var list = document.querySelector('post-list');
-
-  tabs.addEventListener('core-select', function() {
-    list.show = tabs.selected;
-  });
-  
-  // TITLE ANIMATION
-  var animation = document.getElementById('fadeout');
-  animation.target = document.getElementById('title');
-  animation.play();
+    tabs.addEventListener('core-select', function() {
+      list.show = tabs.selected;
+    });
   </script>
 </body>
 
