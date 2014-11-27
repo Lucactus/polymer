@@ -1,58 +1,37 @@
 [
   {
     "uid": 1,
-    "text" : "aferme ta mere a double tour?",
-    "title" : "jackquie",
-    "pic" : "../images/avatar-01.svg",
-    "section" : "1"
+    "section" : "1",
+    "title" : "Le cadre",
+    "text" : "L’IUT Informatique de Montpellier se trouve au nord de Montpellier au seins des facultés.",
+    "pic" : "../images/avatar-01.svg"
   },
   {
     "uid": 2,
-    "text" : "WSWWAASDDDDDF SWAGGY this Polymer thing.",
-    "title" : "Rob",
-    "pic" : "../images/avatar-02.svg",
-    "section" : "2"
+    "section" : "1",
+    "title" : "Le département Informatique",
+    "text" : "Le département informatique se trouve au seins du bâtiment K, qui lui même se trouve a l'extrémités supérieur de l'IUT.",
+    "pic" : "../images/avatar-02.svg" 
   },
-    {
+  {
     "uid": 3,
-    "text" : "So last year...",
-    "title" : "Dimitri",
-    "pic" : "../images/avatar-03.svg",
-    "section" : "3"
+    "section" : "1",
+    "title" : "Les plus de l'IUT Informatique",
+    "text" : "L'IUT Informatique est doté de plusieurs salle informatisée mise a disposition des élèves pour leurs travaux.",
+    "pic" : "../images/avatar-03.svg"
+  },
+  {
+    "uid": 3,
+    "section" : "2",
+    "title" : "Les plus de l'IUT Informatique",
+    "text" : "L'IUT Informatique est doté de plusieurs salle informatisée mise a disposition des élèves pour leurs travaux.",
+    "pic" : "../images/avatar-03.svg"
   },
   {
     "uid": 4,
-    "text" : "Pretty sure I came up with that first.",
-    "title" : "Ada",
-    "pic" : "../images/avatar-07.svg",
-    "section" : "1"
-  },
-  {
-    "uid": 5,
-    "text" : "Yo, I heard you like components, so I put a component in your component.",
-    "title" : "Grace",
-    "pic" : "../images/avatar-08.svg",
-    "section" : "3"
-  },
-  {
-    "uid": 6,
-    "text" : "Centralize, centrailize.",
-    "title" : "John",
-    "pic" : "../images/avatar-04.svg",
-    "section" : "1"
-  },
-  {
-    "uid": 7,
-    "text" : "Has anyone seen my cat?",
-    "title" : "Zelda",
-    "pic" : "../images/avatar-06.svg",
-    "section" : "2"
-  },
-  {
-    "uid": 8,
-    "text" : "Decentralize!",
-    "title" : "Norbert",
-    "pic" : "../images/avatar-05.svg",
-    "section" : "1"
+    "section" : "3",
+    "title" : "Les plus de l'IUT Informatique",
+    "text" : "L'IUT Informatique est doté de plusieurs salle informatisée mise a disposition des élèves pour leurs travaux.",
+    "pic" : "../images/avatar-03.svg"
   }
 ]
