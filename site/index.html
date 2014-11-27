@@ -7,72 +7,68 @@
   <meta charset="utf-8"> 
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
 
-  <script src="../components/webcomponentsjs/webcomponents.js">
-  </script>
+  <script src="../components/webcomponentsjs/webcomponents.js"></script>
 
   <link rel="import" href="../components/font-roboto/roboto.html">
-  <link rel="import"
-    href="../components/core-scroll-header-panel/core-scroll-header-panel.html">
-  <link rel="import"
-    href="../components/core-toolbar/core-toolbar.html">
-  <link rel="import"
-    href="../components/paper-tabs/paper-tabs.html">
+  <link rel="import" href="../components/core-scroll-header-panel/core-scroll-header-panel.html">
+  <link rel="import" href="../components/core-toolbar/core-toolbar.html">
+  <link rel="import" href="../components/paper-tabs/paper-tabs.html">
   <link rel="import" href="post-list.html">
   <link rel="import" href="my-menu.html">
 
   <style>
-  html,body {
-    height: 100%;
-    margin: 0;
-    background-color: #E5E5E5;
-    font-family: 'RobotoDraft', sans-serif;
-  }
+    html,body {
+      height: 100%;
+      margin: 0;
+      background-color: #E5E5E5;
+      font-family: 'RobotoDraft', sans-serif;
+    }
 
-  core-scroll-header-panel {
-    height: 100%;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch; 
-  }
-  /* background for toolbar when it is at its full size */
-  core-scroll-header-panel::shadow #headerBg {
-    background-image: url(../images/bg9.jpg);
-  }
-  /* background for toolbar when it is condensed */
-  core-scroll-header-panel::shadow #condensedHeaderBg {
-    background-color: #03a9f4;
-  }
+    core-scroll-header-panel {
+      height: 100%;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch; 
+    }
+    /* background for toolbar when it is at its full size */
+    core-scroll-header-panel::shadow #headerBg {
+      background-image: url(../images/bg9.jpg);
+    }
+    /* background for toolbar when it is condensed */
+    core-scroll-header-panel::shadow #condensedHeaderBg {
+      background-color: #03a9f4;
+    }
 
-  core-toolbar {
-    background: #03a9f4;
-    color: white;
-  }
+    core-toolbar {
+      background: #03a9f4;
+      color: white;
+    }
 
-  #tabs {
-    width: 100%;
-    margin: 0;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-	text-transform: uppercase;
-  }
-  .container {
-    width: 80%;
-    margin: 50px auto;
-  }
-  @media (min-width: 481px) {
     #tabs {
-      width: 200px;
+      width: 100%;
+      margin: 0;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+  	text-transform: uppercase;
     }
     .container {
       width: 80%;
+      margin: 50px auto;
     }
-  }
-  .title img {
-    width: 50px;
-    border-radius: 50%;
-    margin-right: 20px;
-  }  
+    @media (min-width: 481px) {
+      #tabs {
+        width: 200px;
+      }
+      .container {
+        width: 80%;
+      }
+    }
+    .title img {
+      width: 50px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }  
   </style>
 
 </head>
@@ -99,7 +95,7 @@
     </core-toolbar>
 
     <my-menu></my-menu>
-    
+
     <div class="container" layout vertical center>
       <post-list show="1"></post-list>
     </div>
