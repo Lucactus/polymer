@@ -18,7 +18,7 @@
     
     <div layout vertical center>
       <template repeat="{{post in posts}}">
-        <post-card hidden?="{{show != post.section}}">
+        <post-card hidden?="{{show != post.section}}" z="5">
           <img src="{{post.pic}}" width="70" height="70">
           <h2>{{post.title}}</h2>
           <p>{{post.text}}</p>

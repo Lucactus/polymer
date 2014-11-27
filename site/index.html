@@ -12,7 +12,7 @@
 
   <link rel="import" href="../components/font-roboto/roboto.html">
   <link rel="import"
-    href="../components/core-header-panel/core-header-panel.html">
+    href="../components/core-scroll-header-panel/core-scroll-header-panel.html">
   <link rel="import"
     href="../components/core-toolbar/core-toolbar.html">
   <link rel="import"
@@ -26,15 +26,26 @@
     background-color: #E5E5E5;
     font-family: 'RobotoDraft', sans-serif;
   }
-  core-header-panel {
+
+  core-scroll-header-panel {
     height: 100%;
     overflow: auto;
     -webkit-overflow-scrolling: touch; 
   }
+  /* background for toolbar when it is at its full size */
+  core-scroll-header-panel::shadow #headerBg {
+    background-image: url(../images/bg9.jpg);
+  }
+  /* background for toolbar when it is condensed */
+  core-scroll-header-panel::shadow #condensedHeaderBg {
+    background-color: #03a9f4;
+  }
+  
   core-toolbar {
     background: #03a9f4;
     color: white;
   }
+
   #tabs {
     width: 100%;
     margin: 0;
@@ -46,7 +57,7 @@
   }
   .container {
     width: 80%;
-    margin: 50px auto;
+    margin: 100px auto;
   }
   @media (min-width: 481px) {
     #tabs {
@@ -56,11 +67,6 @@
       width: 1000px;
     }
   }
-  .title {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }  
   .title img {
     width: 50px;
     border-radius: 50%;
@@ -72,13 +78,13 @@
 
 <body unresolved>
 
-  <core-header-panel>
+  <core-scroll-header-panel keepCondensedHeader="true">
 
-    <core-toolbar class="tall">
+    <core-toolbar class="medium-tall">
 
-    	<div class="title" layout horizontal center>
+      <div class="title" horizontal center-justified layout>
         <img src="../images/avatar-01.svg" width="50" height="50">
-        <div flex>Les études dans l'informatique : s'informer pour faire le bon choix !</div>
+        <div>Les études dans l'informatique : s'informer pour faire le bon choix !</div>
       </div>
 
       <div class="bottom fit" horizontal layout>
@@ -89,25 +95,36 @@
           <paper-tab name="3">Informations complémentaires</paper-tab>
         </paper-tabs>
       </div>
-
     </core-toolbar>
 
     <div class="container" layout vertical center>
       <post-list show="1"></post-list>
     </div>
 
-  </core-header-panel>
+  </core-scroll-header-panel>
 
+  <core-animation id="fadeout" duration="1000">
+    <core-animation-keyframe>
+      <core-animation-prop name="opacity" value="1"></core-animation-prop>
+    </core-animation-keyframe>
+    <core-animation-keyframe>
+      <core-animation-prop name="opacity" value="0"></core-animation-prop>
+    </core-animation-keyframe>
+  </core-animation>
   <script>
-  window.onscroll = function (event) {
-  // called when the window is scrolled.
-  }
+
+  // TAB SELECTOR
   var tabs = document.querySelector('paper-tabs');
   var list = document.querySelector('post-list');
 
   tabs.addEventListener('core-select', function() {
     list.show = tabs.selected;
   });
+  
+  // TITLE ANIMATION
+  var animation = document.getElementById('fadeout');
+  animation.target = document.getElementById('title');
+  animation.play();
   </script>
 </body>
 
