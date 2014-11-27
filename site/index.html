@@ -4,7 +4,7 @@
 <head>
 
   <title>Site IUT</title>
-
+  <meta charset="utf-8"> 
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
 
   <script src="../components/webcomponentsjs/webcomponents.js">
@@ -48,11 +48,6 @@
     width: 80%;
     margin: 50px auto;
   }
-  .title ::content img {
-      width: 70px;
-      border-radius: 50%;
-      margin: 10px;
-    }
   @media (min-width: 481px) {
     #tabs {
       width: 200px;
@@ -61,7 +56,9 @@
       width: 600px;
     }
   }
-
+  .title {
+    text-align: center;
+  }  
   .title img {
     width: 50px;
     border-radius: 50%;
@@ -77,16 +74,16 @@
 
     <core-toolbar class="medium-tall">
     	<div class="title" layout horizontal center>
-        <img src="../images/logoiut.png" width="50" height="50">
-        <div flex>Title</div>
+        <img src="../images/avatar-01.svg" width="50" height="50">
+        <div flex>Les études dans l'informatique : s'informer pour faire le bon choix !</div>
       </div>
       <div class="bottom fit" horizontal layout>
         
-        <paper-tabs selected="1" flex style="max-width: 600px;">
+        <paper-tabs selected="1" flex style="max-width: 1000px;">
         
-          <paper-tab name="1">ITEM ONE</paper-tab>
-          <paper-tab name="2">ITEM TWO</paper-tab>
-          <paper-tab name="3">ITEM THREE</paper-tab>
+          <paper-tab name="1">Presentation de l'IUT Informatique</paper-tab>
+          <paper-tab name="2">Les études</paper-tab>
+          <paper-tab name="3">Informations complémentaires</paper-tab>
         </paper-tabs>
 
       </div>
